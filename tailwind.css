@@ -560,6 +560,10 @@ video {
   top: 2.5rem;
 }
 
+.-right-full {
+  right: -100%;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1260,6 +1264,10 @@ video {
     left: 0px;
   }
 
+  .sm\:right-0 {
+    right: 0px;
+  }
+
   .sm\:ml-2 {
     margin-left: 0.5rem;
   }
@@ -1284,6 +1292,12 @@ video {
     --tw-space-x-reverse: 0;
     margin-right: calc(1.25rem * var(--tw-space-x-reverse));
     margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .sm\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .sm\:px-5 {

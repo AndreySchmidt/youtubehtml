@@ -886,8 +886,8 @@
     <!-- channel main start -->
     <main class="md:ml-24 xl:ml-64 pt-14">
         <!-- banner block start -->
-        <div class="relative h-52 bg-center bg-cover" style="background-image: url(channel.jpg)">
-            <div class="absolute right-4 bottom-4 bg-black bg-opacity-10 p-2">
+        <div class="relative h-20 xl:h-52 bg-center bg-cover" style="background-image: url(channel.jpg)">
+            <div class="absolute right-4 bottom-4 bg-black bg-opacity-50 xl:bg-opacity-10 p-3 xl:p-2">
                 <a href="" class="flex items-center">
                     <!-- svg instagram icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" viewBox="0 0 32 32" fill="none">
@@ -922,12 +922,12 @@
         </div>
         <!-- banner block end -->
         <!-- subscribe block start -->
-        <div class="max-w-screen-2xl px-14 pt-4">
+        <div class="max-w-screen-2xl px-20 xl:px-14 pt-4">
 
-            <div class="flex justify-between items-center">
+            <div class="flex flex-col xl:flex-row justify-between items-start md:items-center mb-4 xl:mb-0">
                 <div class="flex items-center">
                     <a href="">
-                        <img src="channel.jpg" class="rounded-full h-16 w-16 mr-6" />
+                        <img src="channel.jpg" class="rounded-full h-16 w-16 mr-6 hidden xl:inline" />
                     </a>
                     <div>
                         <div class="flex items-center">
@@ -940,18 +940,18 @@
                         <div class="text-sm">10K subscribers</div>
                     </div>
                 </div>
-                <button class="bg-red-600 text-white text-xs uppercase py-2 px-4 rounded-sm focus:outline-none">Subscribe</button>
+                <button class="mt-2 xl:mt-0 bg-red-600 text-white text-xs uppercase py-2 px-4 rounded-sm focus:outline-none">Subscribe</button>
             </div>
             <div class="flex items-center">
                 <nav class="mt-2">
                     <a href="" class="px-6 py-3 uppercase text-xs font-medium text-gray-900 border-b-2 border-gray-700 inline-block" >Home</a>
                     <a href="" class="px-6 py-3 uppercase text-xs font-medium hover:text-gray-900 text-gray-500 inline-block" >Videos</a>
-                    <a href="" class="px-6 py-3 uppercase text-xs font-medium hover:text-gray-900 text-gray-500 inline-block" >Playlists</a>
-                    <a href="" class="px-6 py-3 uppercase text-xs font-medium hover:text-gray-900 text-gray-500 inline-block" >Community</a>
-                    <a href="" class="px-6 py-3 uppercase text-xs font-medium hover:text-gray-900 text-gray-500 inline-block" >Channels</a>
-                    <a href="" class="px-6 py-3 uppercase text-xs font-medium hover:text-gray-900 text-gray-500 inline-block" >About</a>
+                    <a href="" class="px-6 py-3 uppercase text-xs font-medium hover:text-gray-900 text-gray-500 hidden xl:inline-block" >Playlists</a>
+                    <a href="" class="px-6 py-3 uppercase text-xs font-medium hover:text-gray-900 text-gray-500 hidden xl:inline-block" >Community</a>
+                    <a href="" class="px-6 py-3 uppercase text-xs font-medium hover:text-gray-900 text-gray-500 hidden xl:inline-block" >Channels</a>
+                    <a href="" class="px-6 py-3 uppercase text-xs font-medium hover:text-gray-900 text-gray-500 hidden xl:inline-block" >About</a>
                 </nav>
-                <div class="px-24 flex items-center ml-6">
+                <div class="px-24 hidden xl:flex items-center ml-6">
                     <!-- svg search icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2 mt-1.5 text-gray-500">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -964,22 +964,22 @@
         <!-- subscribe block end -->
 
         <!-- oneVideo block start -->
-        <div class="px-14 bg-gray-100">
-            <div class="flex py-6">
-                <img class="max-w-sm" src="https://picsum.photos/seed/image4/740/404" />
-                <div class="pl-6 max-w-md flex flex-col justify-between items-start">
+        <div class="px-20 xl:px-14 bg-gray-100">
+            <div class="flex flex-col xl:flex-row py-6">
+                <img class="xl:max-w-sm max-h-60" src="https://picsum.photos/seed/image4/740/404" />
+                <div class="xl:pl-6 mt-3 xl:mt-0 max-w-md flex flex-col justify-between items-start">
                     <div>
                         <span class="font-semibold text-gray-900 text-sm">Video title</span>
-                        <div class="text-xs my-4">45,000 views &middot;4 days ago</div>
-                        <div class="text-black text-sm">Description .... This video bla bla.</div>
+                        <div class="text-xs mt-1 xl:my-4">45,000 views &middot;4 days ago</div>
+                        <div class="text-black text-sm hidden xl:block">Description .... This video bla bla.</div>
                     </div>
-                    <a href="" class="uppercase font-medium text-xs hover:text-black" >Read More</a>
+                    <a href="" class="uppercase font-medium text-xs hover:text-black hidden xl:block" >Read More</a>
                 </div>
             </div>
         </div>
         <!-- oneVideo block end -->
         <!-- line + menu start  -->
-        <div class="px-14 bg-gray-100">
+        <div class="px-20 xl:px-14 bg-gray-100">
             <div class="border-t border-gray-300 pt-5"></div>
             <div class="flex items-center">
                 <a href="" class="font-semibold text-gray-900 mr-6 text-sm">Uploads</a>
@@ -994,7 +994,7 @@
         <!-- line + menu end  -->
         
         <!-- uploadsVideoList block start -->
-        <div class="relative px-14 py-6 bg-gray-100">
+        <div class="relative px-20 xl:px-14 py-6 bg-gray-100">
 
             <a href="" class="rounded-full bg-white shadow-xl w-9 h-9 absolute top-24 left-9 flex z-10 justify-center items-center" >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -1044,7 +1044,7 @@
                 <!-- video item end -->
 
                 <!-- video item start -->
-                <div class="group">
+                <div class="group hidden xl:inline">
                     <a href="">
                         <div class="relative">
                             <img src="https://picsum.photos/seed/picsum/720/404" />
@@ -1079,7 +1079,7 @@
                 <!-- video item end -->
 
                 <!-- video item start -->
-                <div class="group">
+                <div class="group hidden xl:inline">
                     <a href="">
                         <div class="relative">
                             <img src="https://picsum.photos/seed/picsum/720/404" />
@@ -1114,7 +1114,7 @@
                 <!-- video item end -->
 
                 <!-- video item start -->
-                <div class="group">
+                <div class="group hidden xl:inline">
                     <a href="">
                         <div class="relative">
                             <img src="https://picsum.photos/seed/picsum/720/404" />
@@ -1153,7 +1153,7 @@
         <!-- uploadsVideoList block end -->
 
         <!-- line + menu start  -->
-        <div class="px-14 bg-gray-100">
+        <div class="px-20 xl:px-14 bg-gray-100">
             <div class="border-t border-gray-300 pt-5"></div>
             <div class="flex items-center">
                 <a href="" class="font-semibold text-gray-900 mr-6 text-sm">Popular Uploads</a>
@@ -1168,7 +1168,7 @@
         <!-- line + menu end  -->
         
         <!-- PopularUploadsVideoList block start -->
-        <div class="relative px-14 py-6 bg-gray-100">
+        <div class="relative px-20 xl:px-14 py-6 bg-gray-100">
 
             <a href="" class="rounded-full bg-white shadow-xl w-9 h-9 absolute top-24 left-9 flex z-10 justify-center items-center" >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
@@ -1179,7 +1179,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
-              </a>
+            </a>
 
             <div class="flex space-x-1">
                 <!-- video item start -->
@@ -1218,7 +1218,7 @@
                 <!-- video item end -->
 
                 <!-- video item start -->
-                <div class="group">
+                <div class="group hidden xl:inline">
                     <a href="">
                         <div class="relative">
                             <img src="https://picsum.photos/seed/picsum/720/404" />
@@ -1253,7 +1253,7 @@
                 <!-- video item end -->
 
                 <!-- video item start -->
-                <div class="group">
+                <div class="group hidden xl:inline">
                     <a href="">
                         <div class="relative">
                             <img src="https://picsum.photos/seed/picsum/720/404" />
@@ -1288,7 +1288,7 @@
                 <!-- video item end -->
 
                 <!-- video item start -->
-                <div class="group">
+                <div class="group hidden xl:inline">
                     <a href="">
                         <div class="relative">
                             <img src="https://picsum.photos/seed/picsum/720/404" />
@@ -1327,12 +1327,23 @@
         <!-- PopularUploadsVideoList block end -->
         
         <!-- channelList start -->
-        <div class="px-14 py-6 bg-gray-100">
+        <div class="relative px-20 xl:px-14 py-6 bg-gray-100">
             <div class="border-t border-gray-300 pt-5"></div>
+
+            <a href="" class="rounded-full bg-white shadow-xl w-9 h-9 absolute bottom-28 left-9 flex z-10 justify-center items-center" >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+            </a>
+            <a href="" class="rounded-full bg-white shadow-xl w-9 h-9 absolute bottom-28 right-9 flex z-10 justify-center items-center" >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+            </a>
 
             <a href="" class="text-sm font-semibold text-gray-900 focus:outline-none">Featured Channels</a>
             <div class="flex mt-6">
-                <div class="flex flex-col items-center w-1/5">
+                <div class="flex flex-col items-center w-full xl:w-1/5">
                     <a href="" class="flex flex-col items-center w-full">
                         <img src="https://picsum.photos/seed/avatar1/256" class="rounded-full w-24" />
                         <span class="font-semibold text-gray-800 mt-2 mb-4 text-xs">Channel name</span>
@@ -1340,7 +1351,7 @@
                     <button class="uppercase focus:outline-none bg-gray-200 py-1 px-2 text-xs font-medium rounded-sm">Subscribe</button>
                 </div>
 
-                <div class="flex flex-col items-center w-1/5">
+                <div class="hidden xl:flex flex-col items-center w-1/5">
                     <a href="" class="flex flex-col items-center w-full">
                         <img src="https://picsum.photos/seed/avatar5/256" class="rounded-full w-24" />
                         <span class="font-semibold text-gray-800 mt-2 mb-4 text-xs">Channel name</span>
@@ -1348,7 +1359,7 @@
                     <button class="uppercase focus:outline-none bg-gray-200 py-1 px-2 text-xs font-medium rounded-sm">Subscribe</button>
                 </div>
 
-                <!-- <div class="flex flex-col items-center w-1/5">
+                <div class="hidden xl:flex flex-col items-center w-1/5">
                     <a href="" class="flex flex-col items-center w-full">
                         <img src="https://picsum.photos/seed/avatar4/256" class="rounded-full w-24" />
                         <span class="font-semibold text-gray-800 mt-2 mb-4 text-xs">Channel name</span>
@@ -1356,7 +1367,7 @@
                     <button class="uppercase focus:outline-none bg-gray-200 py-1 px-2 text-xs font-medium rounded-sm">Subscribe</button>
                 </div>
 
-                <div class="flex flex-col items-center w-1/5">
+                <div class="hidden xl:flex flex-col items-center w-1/5">
                     <a href="" class="flex flex-col items-center w-full">
                         <img src="https://picsum.photos/seed/avatar3/256" class="rounded-full w-24" />
                         <span class="font-semibold text-gray-800 mt-2 mb-4 text-xs">Channel name</span>
@@ -1364,13 +1375,13 @@
                     <button class="uppercase focus:outline-none bg-gray-200 py-1 px-2 text-xs font-medium rounded-sm">Subscribe</button>
                 </div>
 
-                <div class="flex flex-col items-center w-1/5">
+                <div class="hidden xl:flex flex-col items-center w-1/5">
                     <a href="" class="flex flex-col items-center w-full">
                         <img src="https://picsum.photos/seed/avatar2/256" class="rounded-full w-24" />
                         <span class="font-semibold text-gray-800 mt-2 mb-4 text-xs">Channel name</span>
                     </a>
                     <button class="uppercase focus:outline-none bg-gray-200 py-1 px-2 text-xs font-medium rounded-sm">Subscribe</button>
-                </div> -->
+                </div>
 
             </div>
         </div>
